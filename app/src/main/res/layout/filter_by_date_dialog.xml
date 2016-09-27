@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="300dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/app_blue">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/date" />
+
+        <TextView
+            android:id="@+id/filter_by_date_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:text="@string/filter_date_range"
+            android:textColor="@color/app_dark_blue"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_date"
+                android:textColor="@color/app_dark_blue" />
+
+            <EditText
+                android:id="@+id/startDateEditTxt"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/textbox"
+                android:hint="MM/DD/YYYY"
+                android:padding="5dp" />
+
+            <ImageView
+                android:id="@+id/startDateHelperBttn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/startDatePickerLayout"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <DatePicker
+                android:id="@+id/startDatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"/>
+
+            <Button
+                android:id="@+id/startDateOkayBttn"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dark_button"
+                android:text="@string/ok"
+                android:textColor="@color/app_blue"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center_horizontal"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/end_date"
+                android:textColor="@color/app_dark_blue" />
+
+            <EditText
+                android:id="@+id/endDateEditTxt"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/textbox"
+                android:hint="MM/DD/YYYY"
+                android:padding="5dp" />
+
+            <ImageView
+                android:id="@+id/endDateHelperBttn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/endDatePickerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone">
+            <DatePicker
+                android:id="@+id/endDatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"/>
+
+            <Button
+                android:id="@+id/endDateOkayBttn"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dark_button"
+                android:text="@string/ok"
+                android:textColor="@color/app_blue"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <Button
+                android:id="@+id/filterCancelBttn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/light_button"
+                android:text="@string/action_cancel"
+                android:textColor="@color/app_dark_blue"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"/>
+
+            <Button
+                android:id="@+id/filterBttn"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dark_button"
+                android:text="@string/action_filter"
+                android:textColor="@color/app_blue"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

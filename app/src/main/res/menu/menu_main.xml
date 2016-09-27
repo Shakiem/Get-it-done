@@ -1,0 +1,85 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/refresh_items_action"
+        android:icon="@drawable/refresh"
+        android:title="@string/action_refresh"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/filter_items_action"
+        android:icon="@drawable/filter"
+        android:title="@string/action_filter"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/filter_by_date_action"
+                android:icon="@drawable/date"
+                android:title="By Date" />
+            <item
+                android:id="@+id/filter_by_status_action"
+                android:icon="@drawable/status"
+                android:title="By Status">
+                <menu>
+                    <item
+                        android:id="@+id/filter_by_complete_action"
+                        android:icon="@drawable/complete"
+                        android:title="COMPLETE" />
+                    <item
+                        android:id="@+id/filter_by_incomplete_action"
+                        android:icon="@drawable/incomplete"
+                        android:title="INCOMPLETE" />
+                </menu>
+            </item>
+            <item
+                android:id="@+id/filter_by_priority_action"
+                android:icon="@drawable/priority"
+                android:title="By Priority">
+                <menu>
+                    <item
+                        android:id="@+id/filter_by_not_a_big_deal_action"
+                        android:icon="@drawable/priority"
+                        android:title="NOT A BIG DEAL"/>
+                    <item
+                        android:id="@+id/filter_by_big_deal_action"
+                        android:icon="@drawable/big_deal"
+                        android:title="BIG DEAL"/>
+                    <item
+                        android:id="@+id/filter_by_very_big_deal_action"
+                        android:icon="@drawable/very_big_deal"
+                        android:title="VERY BIG DEAL"/>
+                </menu>
+            </item>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/sort_items_action"
+        android:icon="@drawable/sort"
+        android:title="@string/action_sort"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/sort_by_date_action"
+                android:icon="@drawable/date"
+                android:title="By Date" />
+            <item
+                android:id="@+id/sort_by_status_action"
+                android:icon="@drawable/status"
+                android:title="By Status" />
+            <item
+                android:id="@+id/sort_by_priority_action"
+                android:icon="@drawable/priority"
+                android:title="By Priority"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/add_item_action"
+        android:icon="@drawable/add"
+        android:title="@string/action_add"
+        app:showAsAction="always" />
+
+</menu>

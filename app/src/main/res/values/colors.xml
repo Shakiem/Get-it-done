@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="white" type="color">#FFFFFF</item>
+    <item name="app_blue" type="color">#AED7DA</item>
+    <item name="translucent_app_blue" type="color">#AAAED7DA</item>
+    <item name="app_dark_blue" type="color">#003366</item>
+    <item name="holo_blue" type="color">#33b5e5</item>
+    <item name="disabled_gray" type="color">#D3D3D3</item>
+    <item name="warning_yellow" type="color">#EEBC62</item>
+    <item name="red" type="color">#FF0000</item>
+</resources>
